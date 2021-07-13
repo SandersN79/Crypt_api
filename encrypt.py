@@ -25,12 +25,3 @@ def encrypt(user_key, message):
     eMessage = [''.join(chr(i) for i in Xn)] #combines all the characters back into a single string
     res = str(eMessage)[2:-2] #trims off the [''] from the response
     return jsonify(message=res)
-
-"""@app.route('/_get_current_user')
-def get_current_user():
-    return jsonify(
-        username=g.user.username,
-        email=g.user.email,
-        id=g.user.id
-    )
-"""
